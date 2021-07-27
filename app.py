@@ -1,6 +1,7 @@
 from flask import Flask
-app = Flask(_name_)
+app = Flask(__name__)
 @app.route('/')
 def welcome():
     return "this is my first Flask app! Yay"
-print(app.run_
+if __name__ == '__main__':
+ app.run()
